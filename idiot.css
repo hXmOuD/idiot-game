@@ -1,0 +1,67 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  
+    /* Gradient Background: Blue to Green */
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .question,
+  .yes,
+  .no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .question {
+    font-size: 10vmin;
+  }
+  
+  .yes {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .no {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .yes div,
+  .no div {
+    padding: 1em 2.5em;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FF0000, #FFFF00);
+  }
+  
+  .container > div {
+    display: flex;
+  }
+  
+  .no div {
+    position: relative;
+  }
+  
